@@ -1,0 +1,68 @@
+* 
+{
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    background-color: #d2d232;
+    background:linear-gradient(lightyellow, yellow, white);
+    font-family: Montserrat, Arial, sans-serif;
+    padding: 10px 20px;
+}
+
+.grid-container {
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+#rock, #paper, #scissors {
+    cursor: pointer;
+    user-select: none;
+}
+
+.far, #compGuess, #result {
+    font-size: 2rem;
+    text-align: center;
+    border: solid black 1px;
+    width: 100%;
+    height: 20px;
+    padding: 35px 5px 40px 5px;
+    background-color: lightgray;
+}
+
+#result, h1, p {
+    grid-column: 1 / span 3;
+    width: 100%;
+    height: 15px;
+    text-align: center;
+}
+
+#result {
+    line-height: 15px;
+    height: 10px;
+}
+
+#compGuess {
+    grid-column: 2 / span 1;
+    border: olive double 6px;
+    min-width: 45px;
+}
+
+.score {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#yourScore, #compScore {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+p {
+    padding: 10px;
+}
